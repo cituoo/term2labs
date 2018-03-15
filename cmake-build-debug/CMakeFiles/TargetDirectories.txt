@@ -1,0 +1,3 @@
+/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles/string.dir
