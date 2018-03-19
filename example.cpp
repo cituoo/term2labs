@@ -5,10 +5,8 @@
 int main()
 {
 
-    char * word1 = new char[3];
-    for (int i = 0; i < 3; i++) { word1[i] = 'p'; }
-    char * word2 = new char[3];
-    for (int i = 0; i < 3; i++) { word2[i] = 'q'; }
+    char word1[] = "ppp";
+    char word2[] = "qqq";
     String test1;
     test1 = word1;
     test1.Show();
@@ -39,6 +37,16 @@ int main()
     test3.Show();
     size_t q = test1.Find(test3);
     std::cout<<q;
+    String test4(word2);
+    std::cout<<"\n-------"<<std::endl;
+    test4.Show();
+    test4.Replace('q', 'p');
+    test4.Show();
+    std::cout<<"\n-------"<<std::endl;
+    test1.Show();
+    std::cout<<test1.Size();
+    std::cout<<"\n-------"<<std::endl;
+
 
 
 

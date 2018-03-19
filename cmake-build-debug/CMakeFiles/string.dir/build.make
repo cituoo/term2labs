@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master
+CMAKE_SOURCE_DIR = /Users/YaroslavHaus/CLionProjects/term2labs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/string.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/string.dir/flags.make
 
 CMakeFiles/string.dir/example.cpp.o: CMakeFiles/string.dir/flags.make
 CMakeFiles/string.dir/example.cpp.o: ../example.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/string.dir/example.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/string.dir/example.cpp.o -c /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/string.dir/example.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/string.dir/example.cpp.o -c /Users/YaroslavHaus/CLionProjects/term2labs/example.cpp
 
 CMakeFiles/string.dir/example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/string.dir/example.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/example.cpp > CMakeFiles/string.dir/example.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/YaroslavHaus/CLionProjects/term2labs/example.cpp > CMakeFiles/string.dir/example.cpp.i
 
 CMakeFiles/string.dir/example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/string.dir/example.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/example.cpp -o CMakeFiles/string.dir/example.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/YaroslavHaus/CLionProjects/term2labs/example.cpp -o CMakeFiles/string.dir/example.cpp.s
 
 CMakeFiles/string.dir/example.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/string.dir/example.cpp.o.provides.build: CMakeFiles/string.dir/exampl
 
 CMakeFiles/string.dir/string.cpp.o: CMakeFiles/string.dir/flags.make
 CMakeFiles/string.dir/string.cpp.o: ../string.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/string.dir/string.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/string.dir/string.cpp.o -c /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/string.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/string.dir/string.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/string.dir/string.cpp.o -c /Users/YaroslavHaus/CLionProjects/term2labs/string.cpp
 
 CMakeFiles/string.dir/string.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/string.dir/string.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/string.cpp > CMakeFiles/string.dir/string.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/YaroslavHaus/CLionProjects/term2labs/string.cpp > CMakeFiles/string.dir/string.cpp.i
 
 CMakeFiles/string.dir/string.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/string.dir/string.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/string.cpp -o CMakeFiles/string.dir/string.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/YaroslavHaus/CLionProjects/term2labs/string.cpp -o CMakeFiles/string.dir/string.cpp.s
 
 CMakeFiles/string.dir/string.cpp.o.requires:
 
@@ -117,7 +117,7 @@ string: CMakeFiles/string.dir/example.cpp.o
 string: CMakeFiles/string.dir/string.cpp.o
 string: CMakeFiles/string.dir/build.make
 string: CMakeFiles/string.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable string"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable string"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/string.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/string.dir/clean:
 .PHONY : CMakeFiles/string.dir/clean
 
 CMakeFiles/string.dir/depend:
-	cd /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug /Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles/string.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/YaroslavHaus/CLionProjects/term2labs /Users/YaroslavHaus/CLionProjects/term2labs /Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug /Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug /Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug/CMakeFiles/string.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/string.dir/depend
 

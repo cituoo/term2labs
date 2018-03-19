@@ -151,41 +151,72 @@ bool String::operator<(const String& rhs) const
     return returnedBool;
 }
 
+
+void String::Replace(char oldSymbol, char newSymbol)
+{
+    int j = 0;
+    while (Data[j] != '\0')
+    {
+        if (Data[j] == oldSymbol)
+            Data[j] = newSymbol;
+        j++;
+    }
+}
+
+
 size_t String::Find(const String& substr) const
 {
-    size_t returnedFing = -1;
-    int lenAll, lenSearch;
+    size_t returnedFing = (size_t) -1;
     int flag = 0;
-    for (lenAll = 0; Data[lenAll]; lenAll++); // Размер общей строки
-    for (lenSearch = 0; substr.Data[lenSearch]; lenSearch++); // Размер искомой строки
 
-    for (int i = 0; i < lenAll-lenSearch; i++)
+    int bigLen, lilLen;
+    for (bigLen = 0; Data[bigLen]; bigLen++); // Размер общей строки
+    for (lilLen = 0; substr.Data[lilLen]; lilLen++); // Размер искомой строки
+
+
+    for (int i = 0; i < bigLen-lilLen; i++)
     {
-        for (int j = i; j < lenSearch; j++)
+        for (int j = i; j < lilLen; j++)
         {
-            if (Data[j] != Data[i]) break;
-            else flag++;
+            flag = 1;
+            if (Data[i+j] != substr.Data[j])
+            {
+                flag = 0;
+                break;
+            }
         }
-        if (flag == lenSearch)
+        if (flag == 1)
         {
-            returnedFing = i;
+            returnedFing = (size_t) i;
             break;
         }
-        else flag = 0;
     }
 
     return returnedFing;
 }
 
-
+size_t String::Size() const
+{
+    size_t returnedSize = 0;
+    for (returnedSize = 0; Data[returnedSize]; returnedSize++);
+    return returnedSize;
+}
 
 void String::Show()
 {
     int j = 0;
-    while (Data[j] != '\0') // Подсчитываем длину второго значения
+    while (Data[j] != '\0')
     {
         std::cout<<Data[j]<<"";
         j++;
     }
     std::cout<<std::endl;
 }
+
+/*
+bool String::Empty() const
+{
+    if (Data == nullptr) return true;
+    else return false;
+}
+*/

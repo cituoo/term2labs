@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/example.cpp" "/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles/string.dir/example.cpp.o"
-  "/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/string.cpp" "/Users/YaroslavHaus/Desktop/lab-01-string-cituoo-master/cmake-build-debug/CMakeFiles/string.dir/string.cpp.o"
+  "/Users/YaroslavHaus/CLionProjects/term2labs/example.cpp" "/Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug/CMakeFiles/string.dir/example.cpp.o"
+  "/Users/YaroslavHaus/CLionProjects/term2labs/string.cpp" "/Users/YaroslavHaus/CLionProjects/term2labs/cmake-build-debug/CMakeFiles/string.dir/string.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
