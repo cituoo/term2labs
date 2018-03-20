@@ -42,11 +42,16 @@ int main()
     test4.Show();
     test4.Replace('q', 'p');
     test4.Show();
-    std::cout<<"\n-------"<<std::endl;
+    std::cout<<"-------"<<std::endl;
     test1.Show();
     std::cout<<test1.Size();
     std::cout<<"\n-------"<<std::endl;
-
+    String brackets;
+    brackets = "some string";
+    std::cout<<brackets[0]<<std::endl;
+    brackets[0] = 'S';
+    brackets.Show();
+    std::cout<<"-------"<<std::endl;
 
 
 

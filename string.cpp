@@ -213,6 +213,17 @@ void String::Show()
     std::cout<<std::endl;
 }
 
+char String::operator[](size_t index) const
+{
+    return Data[index];
+}
+
+char& String::operator[](size_t index)
+{
+    char& returnedChar = Data[index];
+    return returnedChar;
+}
+
 /*
 bool String::Empty() const
 {
