@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -9,10 +9,6 @@
 /Users/YaroslavHaus/CLionProjects/term2labs/example.cpp
 iostream
 -
-string.h
-/Users/YaroslavHaus/CLionProjects/term2labs/string.h
-
-/Users/YaroslavHaus/CLionProjects/term2labs/string.cpp
 string.h
 /Users/YaroslavHaus/CLionProjects/term2labs/string.h
 

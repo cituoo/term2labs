@@ -4,6 +4,9 @@ String::String() : Data(nullptr) {} // Обнуляем переменную п�
 
 String::~String() { delete [] Data; } // Обнуляем массив
 
+
+// Выделить в отдельную функцию заполнение чар масива.
+
 String::String(const String& rhs) // Присваиваем переменной значение копируемой переменной
 {
     int i = 0; // Объявляем итератор
@@ -19,6 +22,8 @@ String::String(const String& rhs) // Присваиваем переменной
         Data[j] = rhs.Data[j];
         j++;
     }
+    Data[i] = '\0';
+
 
 }
 
@@ -37,6 +42,7 @@ String::String(const char * data) // Присваиваем значание п�
         Data[i] = data[i];
         i++;
     }
+    Data[i] = '\0';
 
 
 
@@ -51,12 +57,14 @@ String& String::operator=(const String& rhs) // Перегружаем опер�
         i++;
     }
     Data = new char[i];
-    i = 0;
+    // i = 0;
+    i=0;
     while (rhs.Data[i] != '\0')
     {
         Data[i] = rhs.Data[i];
         i++;
     }
+    Data[i] = '\0';
 
     return *this;
 }
@@ -166,33 +174,33 @@ void String::Replace(char oldSymbol, char newSymbol)
 
 size_t String::Find(const String& substr) const
 {
-    size_t returnedFing = (size_t) -1;
-    int flag = 0;
-
+    int flag = 0, i = 0, findedindex = -1;
+    int checker = 0;
     int bigLen, lilLen;
     for (bigLen = 0; Data[bigLen]; bigLen++); // Размер общей строки
     for (lilLen = 0; substr.Data[lilLen]; lilLen++); // Размер искомой строки
 
 
-    for (int i = 0; i < bigLen-lilLen; i++)
+    while (i < bigLen - lilLen && flag == 0)
     {
-        for (int j = i; j < lilLen; j++)
+        for (int j = 0; (j < lilLen); j++)
         {
+            if (Data[i+j] == substr[j])
+                checker ++;
+        }
+
+        if (checker == lilLen)
             flag = 1;
-            if (Data[i+j] != substr.Data[j])
-            {
-                flag = 0;
-                break;
-            }
+        else {
+            checker = 0;
+            i++;
+
         }
-        if (flag == 1)
-        {
-            returnedFing = (size_t) i;
-            break;
-        }
+        findedindex++;
     }
 
-    return returnedFing;
+    // Если искомая строка == 0, то непонятно найдено ли слово или не найдено;
+    return static_cast<size_t>(findedindex); // size_t не имеет отр чисел, как вернуть -1?
 }
 
 size_t String::Size() const
@@ -213,6 +221,8 @@ void String::Show()
     std::cout<<std::endl;
 }
 
+
+
 char String::operator[](size_t index) const
 {
     return Data[index];
@@ -224,10 +234,43 @@ char& String::operator[](size_t index)
     return returnedChar;
 }
 
-/*
+void String::LTrim(char symbol) {
+    size_t i = 0, j = 0;
+    while (Data[i] == symbol)
+        i++;
+    while (Data[j + i] != '\0') {
+        Data[j] = Data[j + i];
+        j++;
+    }
+    Data[j] = '\0';
+
+}
+
+void String::RTrim(char symbol) {
+    size_t i = 0;
+    for (i = 0; Data[i]; i++);
+    i--;
+    while (Data[i] == symbol) {
+        Data[i] = '\0';
+        i--;
+    }
+}
+
+
 bool String::Empty() const
 {
-    if (Data == nullptr) return true;
-    else return false;
+    return strlen(Data) == 0;
+}
+
+std::ostream &operator<<(std::ostream &, const String &) {
+
+    return <#initializer#>;
+}
+
+
+
+// Доделать.
+/*std::ostream &operator<<(std::ostream &, const String &) {
+    return <#initializer#>;
 }
 */
