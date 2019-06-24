@@ -1,10 +1,10 @@
-//
-// Created by Yaroslav Haus on 2019-06-20.
-//
+// Copyright 2019 Yaroslav Haus
+
 #ifndef SOURCE_FORWARD_LIST_HPP_
 #define SOURCE_FORWARD_LIST_HPP_
 
 #include <iostream>
+#include <utility>
 #include <string>
 #include <stdexcept>
 
@@ -100,8 +100,7 @@ void ForwardList<T>::push_back(const T& value)
     if (_tail == nullptr)
     {   // Просто создаем первый элемент
         ForwardList<T>::create_first_node(value);
-    }else // Если уже есть элементы:
-    {
+    }else{ // Если уже есть элементы:
         // Создаем новый элемент
         node* elem = new node;
         // Присваиваем значению элемента заданное значение
@@ -171,8 +170,7 @@ void ForwardList<T>::push_front(const T& value)
     if (_head == nullptr)
     {
         ForwardList<T>::create_first_node(value);
-    }else
-    {
+    }else{
         // Создаем новый элемент
         node* elem = new node;
         // Значение элемента = заданному значению
@@ -225,8 +223,7 @@ void ForwardList<T>::erase(const T& index)
     if (index == 1)
     {
         pop_front();
-    }else
-    {
+    }else{
         // Создаем новый элемент, он указывает на начало
         node *temp = this->_head;
         // Сдвигаем указатель до нашего индекса
@@ -253,8 +250,7 @@ void ForwardList<T>::print() const
     {
         std::cout << "Not elements" << std::endl;
         return;
-    }else
-    {   // Выводим значение каждого элемента
+    }else{   // Выводим значение каждого элемента
         for (node* tmp = _head; tmp != nullptr; tmp = tmp->next)
             std::cout << tmp->data << " ";
         std::cout << std::endl;
@@ -276,11 +272,11 @@ void ForwardList<T>::pop_back()
                 _tail = tmp;
                 list_size--;
             }
-    }else if (size() == 1) // Если элемент 1, убираем его
+    }else if (size() == 1){ // Если элемент 1, убираем его
         pop_front();
-    else // Если элементов нет вообще:
+    }else{ // Если элементов нет вообще:
         std::cout << "Not elements" << std::endl;
-
+    }
 };
 
 template <typename T> // Удаление элемента с начала списка
@@ -303,8 +299,9 @@ void ForwardList<T>::pop_front()
                 _head = tmp;
             }
         }
-    }else
+    }else{
         std::cout << "Not elements" << std::endl;
+    }
 }
 
 template<typename T> // Очистка всего листа

@@ -1,6 +1,5 @@
-//
-// Created by Yaroslav Haus on 2019-06-20.
-//
+// Copyright 2019 Yaroslav Haus
+
 #include <iostream>
 
 #include<gtest/gtest.h>

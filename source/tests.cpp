@@ -1,6 +1,5 @@
-//
-// Created by Yaroslav Haus on 2019-06-20.
-//
+// Copyright 2019 Yaroslav Haus
+
 #include <gtest/gtest.h>
 #include <exception>
 #include <iostream>
@@ -98,7 +97,6 @@ TEST(ForwardList, Swap)
     EXPECT_EQ(list1[1], 3);
     EXPECT_EQ(list1[2], 2);
     EXPECT_EQ(list1[3], 1);
-
 }
 
 TEST(ForwardList, Unique)
