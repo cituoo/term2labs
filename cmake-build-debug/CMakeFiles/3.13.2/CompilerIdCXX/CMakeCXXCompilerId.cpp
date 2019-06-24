@@ -541,7 +541,7 @@ char const info_version_internal[] = {
   'n', '_',
   'i', 'n', 't', 'e', 'r',
   'n', 'a', 'l', '[',
-  COMPILER_VERSION_INTERNAL,']', '\0'};
+  COMPILER_VERSION_INTERNAL, ']', '\0'};
 #endif
 
 /* Construct a string literal encoding the version number components. */
