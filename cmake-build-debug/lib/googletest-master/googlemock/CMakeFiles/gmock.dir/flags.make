@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sd
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/lib/googletest-master/googlemock/include -I/Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/lib/googletest-master/googlemock -isystem /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/lib/googletest-master/googletest/include -isystem /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/lib/googletest-master/googletest 
+CXX_INCLUDES = -I/Users/yaroslavhaus/Desktop/term2labs/lib/googletest-master/googlemock/include -I/Users/yaroslavhaus/Desktop/term2labs/lib/googletest-master/googlemock -isystem /Users/yaroslavhaus/Desktop/term2labs/lib/googletest-master/googletest/include -isystem /Users/yaroslavhaus/Desktop/term2labs/lib/googletest-master/googletest 
 

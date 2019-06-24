@@ -1,9 +1,8 @@
 //
-// Created by Yaroslav Hau.
+// Created by Yaroslav Haus on 2019-06-20.
 //
-
-#ifndef DZ_01_FORWARD_LIST_HPP
-#define DZ_01_FORWARD_LIST_HPP
+#ifndef SOURCE_FORWARD_LIST_HPP_
+#define SOURCE_FORWARD_LIST_HPP_
 
 #include <iostream>
 #include <string>
@@ -23,7 +22,6 @@ private:
     size_t list_size{};
 
 public:
-
     ForwardList();
 
     ForwardList(const ForwardList<T>&);
@@ -68,7 +66,7 @@ public:
 };
 
 template <typename T> // Пустая инициализация листа:
-ForwardList<T>::ForwardList() : _head(nullptr), _tail(nullptr), list_size(0) {};
+ForwardList<T>::ForwardList() : _head(nullptr), _tail(nullptr), list_size(0) {}
 
 template <typename T> // Деструктор
 ForwardList<T>::~ForwardList()
@@ -102,9 +100,7 @@ void ForwardList<T>::push_back(const T& value)
     if (_tail == nullptr)
     {   // Просто создаем первый элемент
         ForwardList<T>::create_first_node(value);
-    }
-    // Если уже есть элементы:
-    else
+    }else // Если уже есть элементы:
     {
         // Создаем новый элемент
         node* elem = new node;
@@ -175,8 +171,7 @@ void ForwardList<T>::push_front(const T& value)
     if (_head == nullptr)
     {
         ForwardList<T>::create_first_node(value);
-    }
-    else
+    }else
     {
         // Создаем новый элемент
         node* elem = new node;
@@ -230,8 +225,7 @@ void ForwardList<T>::erase(const T& index)
     if (index == 1)
     {
         pop_front();
-    }
-    else
+    }else
     {
         // Создаем новый элемент, он указывает на начало
         node *temp = this->_head;
@@ -249,8 +243,6 @@ void ForwardList<T>::erase(const T& index)
         // Уменьшаем длину
         list_size--;
     }
-
-
 };
 
 template <typename T> // Метод принт
@@ -261,8 +253,7 @@ void ForwardList<T>::print() const
     {
         std::cout << "Not elements" << std::endl;
         return;
-    }
-    else
+    }else
     {   // Выводим значение каждого элемента
         for (node* tmp = _head; tmp != nullptr; tmp = tmp->next)
             std::cout << tmp->data << " ";
@@ -285,12 +276,9 @@ void ForwardList<T>::pop_back()
                 _tail = tmp;
                 list_size--;
             }
-    }
-    // Если элемент 1, убираем его
-    else if (size() == 1)
+    }else if (size() == 1) // Если элемент 1, убираем его
         pop_front();
-    // Если элементов нет вообще:
-    else
+    else // Если элементов нет вообще:
         std::cout << "Not elements" << std::endl;
 
 };
@@ -299,6 +287,7 @@ template <typename T> // Удаление элемента с начала сп�
 void ForwardList<T>::pop_front()
 {
     if (_head != nullptr)
+    {
         // Тут у меня не получилось красиво сделать=((
         for (node *tmp = _head; tmp != nullptr; tmp = tmp->next)
         {   // Если наш элемент = первому элементу(А он равен)))
@@ -314,7 +303,7 @@ void ForwardList<T>::pop_front()
                 _head = tmp;
             }
         }
-    else
+    }else
         std::cout << "Not elements" << std::endl;
 }
 
@@ -326,7 +315,7 @@ void ForwardList<T>::clear() const
     list_size = 0;
 }
 
-template<typename T> // Перегружаем оператор скобочек(что бы получать значения по индексу элемента)
+template<typename T> // Перегружаем [](для значения по индексу элемента)
 T &ForwardList<T>::operator[](const size_t i)
 {
     size_t j = 0;
@@ -376,7 +365,7 @@ bool ForwardList<T>::unique(const T & value) const
     {   // Если есть совпадения прибавляем
         if (tmp->data == value)
             checker++;
-        // Если наш счетчик вдруг стал >1, значит искомое значение - не уникально
+        // Если наш счетчик вдруг стал >1 значит искомое значение-не уникально
         if (checker > 1)
             return false;
     }
@@ -411,5 +400,4 @@ ForwardList<T> &ForwardList<T>::swap(ForwardList<T>& swappedList)
     return *this;
 }
 
-
-#endif //DZ_01_FORWARD_LIST_HPP
+#endif //SOURCE_FORWARD_LIST_HPP_

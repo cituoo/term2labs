@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/lib/googletest-master
+# Install script for directory: /Users/yaroslavhaus/Desktop/term2labs/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("/Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

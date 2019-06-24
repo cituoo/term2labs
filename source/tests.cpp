@@ -1,8 +1,7 @@
 //
-// Created by Yaroslav Haus.
+// Created by Yaroslav Haus on 2019-06-20.
 //
 #include <gtest/gtest.h>
-
 #include <exception>
 #include <iostream>
 #include "forward_list.hpp"
@@ -133,4 +132,3 @@ TEST(ForwardList, ListSwap)
     EXPECT_EQ(list3[2], 2);
     EXPECT_EQ(list3[3], 1);
 }
-

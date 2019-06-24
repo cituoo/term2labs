@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01
+CMAKE_SOURCE_DIR = /Users/yaroslavhaus/Desktop/term2labs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dz_01.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/dz_01.dir/flags.make
 
 CMakeFiles/dz_01.dir/main.cpp.o: CMakeFiles/dz_01.dir/flags.make
 CMakeFiles/dz_01.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dz_01.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dz_01.dir/main.cpp.o -c /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dz_01.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dz_01.dir/main.cpp.o -c /Users/yaroslavhaus/Desktop/term2labs/main.cpp
 
 CMakeFiles/dz_01.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dz_01.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/main.cpp > CMakeFiles/dz_01.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaroslavhaus/Desktop/term2labs/main.cpp > CMakeFiles/dz_01.dir/main.cpp.i
 
 CMakeFiles/dz_01.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dz_01.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/main.cpp -o CMakeFiles/dz_01.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaroslavhaus/Desktop/term2labs/main.cpp -o CMakeFiles/dz_01.dir/main.cpp.s
 
 CMakeFiles/dz_01.dir/source/tests.cpp.o: CMakeFiles/dz_01.dir/flags.make
 CMakeFiles/dz_01.dir/source/tests.cpp.o: ../source/tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dz_01.dir/source/tests.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dz_01.dir/source/tests.cpp.o -c /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/source/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dz_01.dir/source/tests.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dz_01.dir/source/tests.cpp.o -c /Users/yaroslavhaus/Desktop/term2labs/source/tests.cpp
 
 CMakeFiles/dz_01.dir/source/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dz_01.dir/source/tests.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/source/tests.cpp > CMakeFiles/dz_01.dir/source/tests.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yaroslavhaus/Desktop/term2labs/source/tests.cpp > CMakeFiles/dz_01.dir/source/tests.cpp.i
 
 CMakeFiles/dz_01.dir/source/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dz_01.dir/source/tests.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/source/tests.cpp -o CMakeFiles/dz_01.dir/source/tests.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yaroslavhaus/Desktop/term2labs/source/tests.cpp -o CMakeFiles/dz_01.dir/source/tests.cpp.s
 
 # Object files for target dz_01
 dz_01_OBJECTS = \
@@ -98,7 +98,7 @@ dz_01: lib/libgtestd.a
 dz_01: lib/libgtest_maind.a
 dz_01: lib/libgtestd.a
 dz_01: CMakeFiles/dz_01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dz_01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dz_01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dz_01.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/dz_01.dir/clean:
 .PHONY : CMakeFiles/dz_01.dir/clean
 
 CMakeFiles/dz_01.dir/depend:
-	cd /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01 /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01 /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug /Users/yaroslavhaus/Desktop/Borshchev-Labs/dz-01/cmake-build-debug/CMakeFiles/dz_01.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yaroslavhaus/Desktop/term2labs /Users/yaroslavhaus/Desktop/term2labs /Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug /Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug /Users/yaroslavhaus/Desktop/term2labs/cmake-build-debug/CMakeFiles/dz_01.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dz_01.dir/depend
 
