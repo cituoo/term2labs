@@ -1,3 +1,4 @@
+// Copyright 2019 edit by Yaroslav Haus
 /* This source file must have a .cpp extension so that all C++ compilers
    recognize the extension without flags.  Borland does not know .cxx for
    example.  */
@@ -540,7 +541,7 @@ char const info_version_internal[] = {
   'n', '_',
   'i', 'n', 't', 'e', 'r',
   'n', 'a', 'l', '[',
-  COMPILER_VERSION_INTERNAL,']','\0'};
+  COMPILER_VERSION_INTERNAL,']', '\0'};
 #endif
 
 /* Construct a string literal encoding the version number components. */
