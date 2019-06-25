@@ -1,13 +1,7 @@
-dist: trusty
+os: linux
 sudo: required
 language:
-  cpp
-os:
-  - linux
-  - osx
-compiler:
-  - gcc
-  - clang
+- minimal
 services:
 - docker
 
